@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo Page</title>
+    <link rel="stylesheet" href="/static/mystyle.css">
+  </head>
+  <body>
+    <h1>Welcome to pink city Jaipur</h1>
+    <br>
+    <!-- <img src="/static/images/ann-min.jpg" alt="sample Image" width="80", height="80"> -->
+
+    <ul>
+      {% for key, value in user.items() %}
+      <li>{{ key }}: {{ value }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
