@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar  1 17:03:28 2020
+
+@author: jagveer
+"""
+
+    body {  
+      background-color: powderblue;  
+    }  
+    h1 {  
+      color: blue;  
+    }  
+    p {  
+      color: red;  
+    }  
