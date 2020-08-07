@@ -8,13 +8,16 @@ Created on Sun Mar  1 14:48:54 2020
 from flask import Flask, redirect, url_for, request 
 app = Flask(__name__) 
 
+
+
 @app.route('/home')  
 def home():  
     return "hello, welcome to our website";  
   
-if __name__ =="__main__":  
-    app.run(debug = False)  
-    
+@app.route('/')  
+def home1():  
+    return "hello, welcome to our website";  
+
 
 @app.route('/view/<name>') 
 def hello_name(name_age): 
@@ -45,4 +48,4 @@ def login():
     	return redirect(url_for('success',name = user)) 
 
 if __name__ == '__main__': 
- app.run(debug = False) 
+ app.run(debug = True) 

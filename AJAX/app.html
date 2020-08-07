@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$("document").ready(function(){
+alert('hello');
+    $("#send").click(function(){
+        var message = $("#message").val();    
+        alert(message);    
+        $.ajax({
+            url: "http://localhost:5000/api/",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({"message": message}) 
+     
+             })  
+            });
+            });
+</script>
+</head><body><p>Send a message to the api!</p>
+message: <input id="message">
+<button id="send" value="send">send</button>
+</body>
+</html>
