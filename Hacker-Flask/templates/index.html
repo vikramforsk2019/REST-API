@@ -43,16 +43,16 @@ Author URL: http://w3layouts.com
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item @@index-active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item @@about-active">
-              <a class="nav-link effect-3" href="about.html">About</a>
+              <a class="nav-link effect-3" href="{{url_for('about')}}">About</a>
             </li>
             <li class="nav-item @@services-active">
               <a class="nav-link effect-3" href="services.html">Menu</a>
             </li>
             <li class="nav-item @@contact-active">
-              <a class="nav-link effect-3" href="contact.html">Contact</a>
+              <a class="nav-link effect-3" href="{{url_for('contact')}}">Contact</a>
             </li>
             <li class="px-4 fill-none">
               <a href="#url" class="btn btn-style btn-secondary">Online Order</a>
@@ -173,7 +173,7 @@ Author URL: http://w3layouts.com
                                 <h4 class="name-pos"><a href="#url">{{ jsondata[i]['name'] }}</a></h4>
                                 <p>{{ jsondata[i]['category'] }}</</p>
                                 <h5>{{ jsondata[i]['price'] }}</h5>
-                                <a href="{{ url_for('home_page') }}" class="btn-style btn-primary btn mt-4">See More</a>
+                                <a href="{{ url_for('service',id=jsondata[i])}}" class="btn-style btn-primary btn mt-4">See More</a>
                                 <a href="#url"><img src="{{ jsondata[i]['image'] }}" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
