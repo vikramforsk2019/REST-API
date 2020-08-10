@@ -16,12 +16,9 @@ http://localhost:5000
 
 2.Concatenate path and filename
 
+3.make json file from json Api data
 http://starlord.hackerearth.com/recipe
 
-full_path = os.path.join("image", jsondata[i]['name'])
-
-urllib.request.urlretrieve(jsondata[i]['image'], full_path)
-
-3.Create a new JSON file from Api datas
+4.POST\GET requests to FLask API using Python
 
 
