@@ -11,3 +11,6 @@ full_path = os.path.join("image", jsondata[i]['name'])
 
 urllib.request.urlretrieve(jsondata[i]['image'], full_path)
 
+3.Create a new JSON file from Api datas
+
+
